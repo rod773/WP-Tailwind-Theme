@@ -1,13 +1,10 @@
 module.exports = {
-	purge: [],
-	theme: {
-	  extend: {},
+	purge: {
+	  content: ['./template-parts/*.php', './inc/*.php', './*.php'],
+	  options: {
+		whitelist: [],
+	  }
 	},
-	variants: {},
-	plugins: [],
-  }
-  module.exports = {
-	purge: [],
 	target: 'relaxed',
 	prefix: '',
 	important: false,
