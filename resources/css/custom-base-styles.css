@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Inter var";
+	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
+	font-style: normal;
+	font-display: swap;
+	src: url('../../resources/fonts/Inter-upright-var.woff2') format("woff2");
+}
+.markdown {
+	@apply text-gray-700 leading-relaxed;
+
+	* {
+		@apply mt-2;
+	}
+	> * + * {
+		@apply mt-6;
+	}
+	h1 {
+		@apply text-3xl font-bold text-gray-900 leading-tight;
+	}
+	a {
+		@apply text-gray-900 underline;
+	}
+	ul {
+		@apply list-disc pl-6;
+		li + li {
+			@apply mt-2;
+		}
+	}
+	.wp-block-preformatted {
+		@apply bg-gray-100 border border-gray-200 text-gray-900 text-sm font-mono rounded p-3 mt-2 whitespace-pre overflow-auto;
+	}
+}
